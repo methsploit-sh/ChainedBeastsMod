@@ -1,0 +1,34 @@
+# Build output
+bin/
+obj/
+dist/
+*.zip
+*.sha256
+
+# Game files and anything generated from them. Never commit these.
+/backup/
+*.dll
+*.exe
+*.pdb
+interop/
+BepInEx/
+Assembly-CSharp*.dll
+GameAssembly.dll
+global-metadata.dat
+*_Data/
+
+# Save backups made by the mod while testing
+CBMod-SaveBackups/
+
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.rsuser
+Thumbs.db
+.DS_Store
+
+# Personal working notes (not part of the project)
+handoff.md
