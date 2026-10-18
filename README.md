@@ -4,12 +4,22 @@ CBMod is a small [BepInEx](https://github.com/BepInEx/BepInEx) plugin for **Chai
 an in-game menu for things like god mode, infinite stamina, unlocks and chain length. It is meant for **single-player and
 co-op PvE** play, for people who want to experiment, practice, or play with accessibility tweaks.
 
-> **Unofficial fan tool.** Not affiliated with, endorsed by, or connected to Featherweight Games. This repository contains
-> no game files, assets, or game code. You need your own copy of the game to use or build it.
+> **Unofficial fan tool.** This repository contains no game files, assets, or game code. You need your own copy of the game
+> to use or build it. Please read the [Disclaimer](#disclaimer) below.
 
 - Tested with: **Chained Beasts 1.0.1**, Unity **6000.3.21f1** (IL2CPP), BepInEx 6 **be.789**, Windows 10/11.
 - Menu languages: **English** and **Turkish** (switchable in the menu).
 - License: MIT (see [LICENSE](LICENSE)).
+
+## Disclaimer
+
+- **Unofficial fan project.** Not affiliated with, endorsed by, or connected to Featherweight Games. Use at your own risk.
+- **Play fair.** Do not use it to gain an unfair advantage over other players. It is not intended for leaderboards or
+  competitive play.
+- **Shared options need consent.** Options that affect other players (god mode, money, chain length) only work for the host.
+  Use them only in lobbies where everyone agrees.
+- **Updates can break it.** Game updates may break the mod. If you see problems, remove it (delete the BepInEx files or
+  `CBMod.dll`) before reporting bugs to the developers.
 
 ## Features
 
@@ -144,8 +154,7 @@ and the language buttons write to it as well.
 ## Warnings, please read
 
 - **Chain, money and god mode affect the whole lobby.** The chain connects every player, and run money is shared. These
-  features only work when you are the **host**; as a guest they are refused (with a warning sound and a log line). Tell
-  the people you play with before you change shared things, and do not use the mod to spoil other people's games.
+  features only work when you are the **host**; as a guest they are refused (with a warning sound and a log line).
 - **Unlocking changes your save.** Before every unlock the mod copies `SaveData`, `SaveDataPrivate` and `Settings` to
   `Documents\CBMod-SaveBackups\<date-time>\`, and the path is written to the log. If the backup fails, the unlock is
   cancelled. To restore, close the game and copy those files back into
@@ -153,11 +162,11 @@ and the language buttons write to it as well.
 - **Steam Cloud.** Steam may sync your save. If a restored or changed save gets overwritten, turn Steam Cloud off for the
   game (Steam, game properties, General) while you restore, and check the result before turning it back on.
 - **Steam achievements are never granted** by this mod. Unlock Cosmetics only edits the progress stored in the save file.
-- **Game updates can break the mod.** The plugin patches internal game methods that can change in any update. If the game
-  updates and something stops working, check `BepInEx\LogOutput.log`, and delete `BepInEx\interop` and `BepInEx\cache` so
-  they are regenerated. Wait for a CBMod update if it still fails.
-- **Use at your own risk.** Modding may go against the game's or platform's terms, and the mod is provided without any
-  warranty (see the license). Back up your saves yourself too if they matter to you.
+- **Game updates can break the mod.** The plugin patches internal game methods that can change in any update. If something
+  stops working after an update, check `BepInEx\LogOutput.log`, and delete `BepInEx\interop` and `BepInEx\cache` so they
+  are regenerated. Wait for a CBMod update if it still fails.
+- **No warranty.** Modding may go against the game's or platform's terms, and the mod is provided as is (see the license).
+  Back up your saves yourself too if they matter to you.
 
 ## Troubleshooting
 
