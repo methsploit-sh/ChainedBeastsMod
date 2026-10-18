@@ -11,6 +11,14 @@ co-op PvE** play, for people who want to experiment, practice, or play with acce
 - Menu languages: **English** and **Turkish** (switchable in the menu).
 - License: MIT (see [LICENSE](LICENSE)).
 
+## Why this project exists
+
+While looking for a Chained Beasts mod menu, I found a GitHub repo distributing a zip that turned out to be malware (a renamed Notepad++ updater sideloading a fake libcurl.dll; VirusTotal: 4/62). I reported it to GitHub.
+
+Players who want practice or accessibility options shouldn't have to run unknown executables. CBMod is a small, open-source BepInEx plugin: all source is in this repository, it contains no network code, and every release has a SHA256 checksum you can verify.
+
+If you ever find a "mod menu" that asks you to disable your antivirus or run an .exe, don't.
+
 ## Disclaimer
 
 - **Unofficial fan project.** Not affiliated with, endorsed by, or connected to Featherweight Games. Use at your own risk.
